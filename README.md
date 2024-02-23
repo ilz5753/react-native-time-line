@@ -2,6 +2,12 @@
 
 A customizable and animated timeline component for React Native applications.
 
+## Demo
+
+
+https://github.com/ilz5753/react-native-time-line/assets/87062381/3796bc4c-eee1-4f56-8e08-f3b5427b4a0e
+
+
 ## Installation
 
 ```sh
