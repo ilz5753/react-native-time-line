@@ -1,4 +1,4 @@
-# react-native-time-line
+# @ilz5753/react-native-time-line
 
 A customizable and animated timeline component for React Native applications.
 
@@ -6,11 +6,11 @@ A customizable and animated timeline component for React Native applications.
 
 ```sh
 
-npm install react-native-time-line
+npm install @ilz5753/react-native-time-line
 # or yarn
-yarn add react-native-time-line
+yarn add @ilz5753/react-native-time-line
 # or bun
-bun add react-native-time-line
+bun add @ilz5753/react-native-time-line
 
 ```
 
@@ -20,7 +20,7 @@ bun add react-native-time-line
 import TimeLine, {
   ITimeLineItem,
   TTimeLineAnimatedComponentProps,
-} from "react-native-time-line";
+} from "@ilz5753/react-native-time-line";
 
 function Node({
   animatedValue,

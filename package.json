@@ -1,5 +1,5 @@
 {
-  "name": "react-native-time-line",
+  "name": "@ilz5753/react-native-time-line",
   "version": "0.1.0",
   "description": "",
   "main": "lib/commonjs/index",
@@ -146,6 +146,5 @@
         }
       ]
     ]
-  },
-  "private": "true"
+  }
 }
