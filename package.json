@@ -1,6 +1,6 @@
 {
   "name": "@ilz5753/react-native-time-line",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React Native Time Line",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
