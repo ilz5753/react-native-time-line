@@ -113,8 +113,8 @@ function App() {
 | initialIndex | `number`          | `0`     | The index of the initially active item.                                                                                                                  |
 | isRTL        | `boolean`         | `false` | Determines the direction of the timeline. Set to `true` for right-to-left languages.                                                                     |
 | spaceOut     | `number`          | `20`    | The padding space arround component.                                                                                                                     |
-| gapHor       | `number`          | `10`    | The horizontal gap between the line and the node.                                                                                                        |
-| gapVert      | `number`          | `10`    | The vertical gap between the label and the node.                                                                                                         |
+| gapHor       | `number`          | `10`    | The horizontal gap between the node-label and line-render components.                                                                                    |
+| gapVert      | `number`          | `10`    | The vertical gap between the node-line and label-render components.                                                                                      |
 | sharedProps  | `object`          |         | Any additional props that should be shared among the animated components.                                                                                |
 
 ### TimeLineItem Props
@@ -125,18 +125,18 @@ function App() {
 | Node     | `TTimeLineAnimatedComponent` | A component representing the visual element (node) in the timeline.     |
 | Label    | `TTimeLineAnimatedComponent` | A component representing the label for the timeline item.               |
 | Line     | `TTimeLineAnimatedComponent` | A component representing the line connecting the nodes in the timeline. |
-| Render   | `TTimeLineAnimatedComponent` | A component representing time line item render component.               |
+| Render   | `TTimeLineAnimatedComponent` | A component representing the time line item Render.                     |
 | disabled | `boolean`                    | When `true`, the item is disabled and not interactive.                  |
 
 ### Animated Component Props
 
-The animated components (`Node`, `Line`, and `Label`) receive the following props:
+The animated components (`Node`, `Line`, `Label`, and `Render`) receive the following props:
 
 | Prop                | Type          | Description                                                                                              |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------- |
-| animatedValue       | `SharedValue` | The current animated value representing the position of the component.                                   |
+| animatedValue       | `SharedValue` | The current animated value (0-1).                                                                        |
 | activeIndex         | `number`      | The index of the currently active item.                                                                  |
-| isActive            | `boolean`     | boolean flag indicates current item is active or not.                                                    |
+| isActive            | `boolean`     | boolean flag indicates item is active or not.                                                            |
 | sharedProps         | `object`      | Any additional props passed to the component through the `sharedProps` prop of the `TimeLine` component. |
 | goto(index: number) | `function`    | Manually move the timeline to the specified index.                                                       |
 
